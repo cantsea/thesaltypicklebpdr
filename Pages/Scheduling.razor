@@ -1,10 +1,39 @@
 ﻿@page "/scheduling"
 @inject HttpClient Http
 
-<PageTitle>Weather</PageTitle>
+<PageTitle>Reserve a Time</PageTitle>
 
-<h1>Reserve A Time</h1>
+<div style="max-width: 720px; margin: 0 auto; padding: 2rem; font-family: sans-serif; line-height: 1.6;">
 
-Please contact Billy for further details and to coordinate your private court rental:
-904 655-2547
-Thank you, see you on the court!
+    <h1 style="font-size: 2.2rem; color: #2c3e50; margin-bottom: 1rem;">
+        Reserve A Time
+    </h1>
+
+    <p>
+        Please contact <strong>Billy</strong> to coordinate your private court rental:
+    </p>
+
+    <p style="font-size: 1.3rem; margin-bottom: 1.5rem;">
+        📞 <a href="tel:9046552547" style="color: #007bff; text-decoration: none;">904-655-2547</a>
+    </p>
+
+    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+        <a href="tel:9046552547" style="padding: 0.75rem 1.5rem; background-color: #28a745; color: white; text-decoration: none; border-radius: 6px;">
+            📞 Call Now
+        </a>
+        <a href="sms:9046552547" style="padding: 0.75rem 1.5rem; background-color: #17a2b8; color: white; text-decoration: none; border-radius: 6px;">
+            💬 Text Now
+        </a>
+    </div>
+
+    <p>
+        Thank you — see you on the court!
+    </p>
+
+    <hr style="margin: 2rem 0;" />
+
+    <p>
+        <strong>*Cancellation Policy:</strong> Please cancel at least two hours prior to your reserved time to avoid a penalty. Late cancellations may incur a $20 fee.
+    </p>
+
+</div>
