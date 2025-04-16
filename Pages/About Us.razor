@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using MudBlazor
 
 <PageTitle>About Us</PageTitle>
 
@@ -32,3 +33,16 @@
         If you're looking for a truly unique pickleball venue in Chesapeake, look no further — <strong>The Salty Pickle</strong> is the place to be!
     </p>
 </div>
+<MudCarousel ShowArrows="true" ShowBullets="true" EnableSwipeGesture="true" AutoCycle="true" TData="object">
+    <MudCarouselItem>
+           <MudBlazor.MudImage Source="Images/court_1.jpg"/>
+    </MudCarouselItem>
+</MudCarousel>
+<MudSelect @bind-Value="transition" Label="Transition" Class="ma-2">
+    <MudSelectItem Value="@Transition.Fade">Fade</MudSelectItem>
+    <MudSelectItem Value="@Transition.Slide">Slide</MudSelectItem>
+    <MudSelectItem Value="@Transition.None">None</MudSelectItem>
+</MudSelect>
+@code{ 
+    private Transition transition = Transition.Slide;
+}
